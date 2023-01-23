@@ -75,9 +75,8 @@ def score(nice,mean,name):
 
 
 def win(nice,mean,name):
-    dub = "you win"
     # Substitute the {} wildcards with our variable values
-    print("\nNice job {},", + dub.upper(), + "! \nEveryone loves you and you've \nmade lots of friends along the way!".format(name))
+    print("\nNice job {}, YOU WIN! \nEveryone loves you and you've \nmade lots of friends along the way!".format(name))
     # call again function and pass in our variables
     again(nice,mean,name)
 
