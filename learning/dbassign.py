@@ -23,8 +23,8 @@ with conn:
         )")
     for file in fileList:
             if file.endswith(".txt"):
-                msg = "File: {}".format(file[0])
-                print(file)
+               cur.execute("INSERT INTO tbl_test2 (col_file) VALUES (?)", (file,)) 
+               print(file)
     
     conn.commit()
 # close connection to database
