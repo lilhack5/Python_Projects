@@ -17,7 +17,7 @@ class Player:
         entry_email = input("Enter your email: ")
         entry_password = input("Enter your Password: ")
         if (entry_email == self.email and entry_password == self.password):
-            print("You have returned again, {}!.".format(entry_name))
+            print("You have returned again, {}!".format(entry_name))
         else:
             print("The password or email is incorrect.")
 
@@ -25,6 +25,15 @@ class Player:
 class Game(Player):
     game_tokens = 555
     game_completed = "55%"
+
+    def getLoginInfo(self):
+        entry_name = input("Enter your name: ")
+        entry_email = input("Enter your email: ")
+        completed = input("Enter what you have completed: ")
+        if (entry_name == self.email and completed == self.completed):
+            print("{} !".format(entry_name))
+        else:
+            print("That does not match what you have completed.")
 
 # Child class 2
 class Apex(Player):
