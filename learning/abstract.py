@@ -7,7 +7,7 @@
 #                   
 # Tested OS:        This code was written and tested to work with Windows 11.
 
-from abc import ABC, abstractmehod
+from abc import ABC, abstractmethod
 class apex(ABC):
     def buyCoins(self, amount):
         print("The apex coins cost: ",amount)
